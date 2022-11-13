@@ -1,12 +1,99 @@
+import {
+  Box,
+  Heading,
+  Input,
+  VStack,
+  Text,
+  View,
+  Image,
+  Button,
+  Pressable,
+} from "native-base";
+import {
+  MaterialCommunityIcons,
+  Ionicons,
+  FontAwesome,
+} from "@expo/vector-icons";
 import React from "react";
-import { View, Text } from "react-native";
+import Colors from "../color";
 
 function RegisterScreen() {
-    return(
-        <View>
-            <Text>RegisterScreen</Text>
-        </View>
-    )
+  return (
+    <Box flex={1} bg={Colors.black}>
+      <Image
+        flex={1}
+        alt="logo"
+        resizeMode="cover"
+        size="lg"
+        w="full"
+        source={require("../../assets/bg2.webp")}
+      />
+      <Box
+        w="full"
+        h="full"
+        position="absolute"
+        top="0"
+        px="6"
+        justifyContent="center"
+      >
+        <Heading>SING UP</Heading>
+        <VStack space={5} pt="6">
+          <Input
+            InputLeftElement={
+              <FontAwesome name="user" size={24} color={Colors.main} />
+            }
+            variant="underlined"
+            placeholder="Lê Quang Đạt"
+            w="80%"
+            pl={2}
+            color={Colors.main}
+            boderBottomColor={Colors.underline}
+          />
+          <Input
+            InputLeftElement={
+              <MaterialCommunityIcons
+                name="email"
+                size={24}
+                color={Colors.main}
+              />
+            }
+            variant="underlined"
+            placeholder="user@gmail.com"
+            w="80%"
+            pl={2}
+            color={Colors.main}
+            boderBottomColor={Colors.underline}
+          />
+          <Input
+            InputLeftElement={
+              <Ionicons name="eye" size={24} color={Colors.main} />
+            }
+            variant="underlined"
+            placeholder="**********"
+            w="80%"
+            type="password"
+            pl={2}
+            color={Colors.main}
+            boderBottomColor={Colors.underline}
+          />
+        </VStack>
+        <Button
+          _pressed={{
+            bg: Colors.main,
+          }}
+          my={30}
+          w="25%"
+          rounded={50}
+          bg={Colors.main}
+        >
+          SIGN UP
+        </Button>
+        <Pressable mt={4}>
+          <Text color={Colors.deepblack}>SIGN UP</Text>
+        </Pressable>
+      </Box>
+    </Box>
+  );
 }
 
 export default RegisterScreen;

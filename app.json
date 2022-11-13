@@ -1,13 +1,13 @@
 {
   "expo": {
-    "name": "Shoe-shop",
+    "name": "ShoeShop",
     "slug": "Shoe-shop-app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/favicon.jpg",
+    "icon": "./assets/favicon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/favicon.jpg",
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#48B600"
     },
@@ -22,12 +22,12 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/splash.png",
+        "foregroundImage": "./assets/favicon.png",
         "backgroundColor": "#48B600"
       }
     },
     "web": {
-      "favicon": "./assets/favicon.jpg"
+      "favicon": "./assets/favicon.png"
     }
   }
 }
