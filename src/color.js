@@ -1,7 +1,7 @@
 const Colors = {
-    main: "#55DD33",
+    main: "#00D100",
     white: "#FFFFFf",
-    black: "#BCBCBC",
+    black: "#000000",
     orange: "#FFCE31",
     red: "#EF0107",
     gray: "F4F4F4",
@@ -11,7 +11,7 @@ const Colors = {
     underline: "E5E5E5",
     paypal: "FFB730",
     deepblack: "#000000",
-    page: "#55DD33"
+    page: "#00D100"
 }
 
 export default Colors;
